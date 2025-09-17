@@ -1,0 +1,128 @@
+/* Basic Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header & Footer */
+.main-header {
+    background: #002244;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+}
+
+.main-header h2 {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Sections */
+.section-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.section-container h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2rem auto;
+    width: 80%;
+}
+/* Team Section */
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    width: 45%; /* Adjusted width for a more flexible layout */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Add a new media query for larger screens to adjust the layout */
+@media (min-width: 1024px) {
+    .team-member {
+        width: 30%; /* Three members per row on larger screens */
+    }
+}
+
+/* General Content */
+.section-content {
+    text-align: left;
+}
+
+.tech-stack {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-left: 5px solid #005f9c;
+}
+
+.tech-stack li {
+    margin-bottom: 0.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+
+    .main-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
